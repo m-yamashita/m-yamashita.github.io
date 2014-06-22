@@ -5,13 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>ブログを作り直しました。 - あ、はい。</title>
+  <title>イントラネット内でナレッジ/ノウハウの共有ができる「Lodge」をリリースしました。 - あ、はい。</title>
   <meta name="author" content="m-yamashita">
 
   
-  <meta name="description" content="久々にブログを更新しようかなと思って以前と別の環境にOctopress環境を導入したんですが、
-bitbucketに保存していたバックアップが古くて過去記事と整合性が取れなくなっちゃったんで、
-どうせ大したことも書いてなかったしってことで、新しく作りなおすことにしちゃいました♪ というわけで、 &hellip;">
+  <meta name="description" content="イントラネットで Qiita:Team を使いたい！ あらすじ 社内で各チーム間で共有できるナレッジやノウハウなんかをきちんとまとめられるようにしたいなぁと思うと、Qiita:Team という素晴らしいサービスが最適解になるんじゃないかと思います。 Qiita:Team &ndash; &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -20,7 +18,7 @@ bitbucketに保存していたバックアップが古くて過去記事と整�
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://m-yamashita.github.io/blog/2014/01/19/remade-the-blog-system">
+  <link rel="canonical" href="http://m-yamashita.github.io/blog/2014/06/22/lodge-release">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="あ、はい。" type="application/atom+xml">
@@ -82,7 +80,7 @@ bitbucketに保存していたバックアップが古くて過去記事と整�
   
   <header>
     
-      <h1 class="entry-title">ブログを作り直しました。</h1>
+      <h1 class="entry-title">イントラネット内でナレッジ/ノウハウの共有ができる「Lodge」をリリースしました。</h1>
     
     
       <p class="meta">
@@ -98,7 +96,7 @@ bitbucketに保存していたバックアップが古くて過去記事と整�
   
 
 
-<time datetime="2014-01-19T03:55:24+09:00" pubdate data-updated="true">2014-01-19 03:55:24</time>
+<time datetime="2014-06-22T14:23:24+09:00" pubdate data-updated="true">2014-06-22 14:23:24</time>
         
            | <a href="#disqus_thread"
              data-disqus-identifier="http://m-yamashita.github.io">Comments</a>
@@ -108,14 +106,75 @@ bitbucketに保存していたバックアップが古くて過去記事と整�
   </header>
 
 
-<div class="entry-content"><p>久々にブログを更新しようかなと思って以前と別の環境にOctopress環境を導入したんですが、
-bitbucketに保存していたバックアップが古くて過去記事と整合性が取れなくなっちゃったんで、
-どうせ大したことも書いてなかったしってことで、新しく作りなおすことにしちゃいました♪</p>
+<div class="entry-content"><h2>イントラネットで Qiita:Team を使いたい！</h2>
 
-<p>というわけで、またよろしくお願いします。</p>
+<h3>あらすじ</h3>
 
-<p>ついでにコメント欄もつけてみました。
-はてブとかも頑張ればつけれるみたいなのでやってみよかなー。</p>
+<p>社内で各チーム間で共有できるナレッジやノウハウなんかをきちんとまとめられるようにしたいなぁと思うと、Qiita:Team という素晴らしいサービスが最適解になるんじゃないかと思います。</p>
+
+<p><a href="https://teams.qiita.com/">Qiita:Team &ndash; ドキュメントを軸としたコラボレーションサービス | Qiita</a></p>
+
+<p>でも、残念なことにQiita:Teamはチーム内限定とはいえ、そのデータ自体はQiitaに預ける形になってしまい、社外秘な情報などを含んだナレッジの共有なんかは、セキュリティリスク的にちょっと怖くて使いたくても使えないなんて事がままある気がします。非常に惜しい！</p>
+
+<p>で、そんな時思ったのです。 <strong>無いなら作ればいいじゃない！</strong> と。
+こんな素晴らしいサービスを使わず何を使えというのか！と。
+GitHubに対するGitLabのようなものが、Qiitaでもあって良いじゃないか！と。</p>
+
+<h3>Lodge 作りました。</h3>
+
+<p>はい、そんなわけで週末と通勤電車の中でこつこつ作ってみました。
+Ruby on Rails製のOSSプロジェクトです。
+Qiita様超リスペクトです。</p>
+
+<p><a href="https://github.com/m-yamashita/lodge">m-yamashita/lodge</a></p>
+
+<p>インストールや詳細情報は上記GitHubを参照いただければと思います。</p>
+
+<p>社内でしか書けない情報もこれでバッチリ共有できると思うので、
+今まで涙を飲んでQiita:Teamの採用を見送ってきたより多くのチームにお使い頂ければと思っています。</p>
+
+<p>ちなみに当然のことながらイントラネットに限定しなくても使えますので、技術情報以外(例えばゲームの攻略情報とか？)の専用ナレッジとして公開するなどしても面白いかもしれません。</p>
+
+<h3>スクリーンショット</h3>
+
+<p>一覧画面</p>
+
+<p><img src="https://github.com/m-yamashita/lodge/raw/master/lodge01.png" alt="一覧画面" /></p>
+
+<p>記事閲覧画面</p>
+
+<p><img src="https://github.com/m-yamashita/lodge/raw/master/lodge02.png" alt="記事閲覧画面" /></p>
+
+<p>まだまだ本家Qiita様には遠く及びませんが、MIT LicenseによるフリーなWEBアプリケーションで、
+イントラネット内で使えるというところに価値があるかなと思います。
+以下にデモサイトも用意したので、実際にお試しいただけます。</p>
+
+<p><a href="http://lodge-sample.herokuapp.com/users/sign_in">Lodge</a></p>
+
+<p>お試し用のユーザ名は以下、パスワードは全て <code>password</code> でログインできます。</p>
+
+<ul>
+<li><code>user01@example.com</code></li>
+<li><code>user02@example.com</code></li>
+<li><code>user03@example.com</code></li>
+<li><code>user04@example.com</code></li>
+<li><code>user05@example.com</code></li>
+</ul>
+
+
+<p>また、新規ユーザ登録もメールアドレスから行えます。</p>
+
+<p>※但し、上記サイトは自体はpublicなので、ご登録の際にはご注意ください。</p>
+
+<p>実際に現場で試験運用してみて、なかなか好評価を得ることもできましたので、そこまで使えないような代物ではないかなと思っています。</p>
+
+<p>とりあえずまずは最低限の機能を持たせることを優先として作成したので、これからもっともっと機能も充実化や改善していったり、イントラネット内だからこそできる機能なんかも積極的に取り入れてみたいと思っています。</p>
+
+<h2>最後に</h2>
+
+<p>これからも開発は続けていく予定ですが、せっかくOSSなので、皆さんのpull reqもどんどんお待ちしています！Lodgeをよりよくして頂ける方を募集しています。</p>
+
+<p>Qiita最高！！</p>
 </div>
 
 
@@ -138,12 +197,12 @@ bitbucketに保存していたバックアップが古くて過去記事と整�
   
 
 
-<time datetime="2014-01-19T03:55:24+09:00" pubdate data-updated="true">2014-01-19 03:55:24</time>
+<time datetime="2014-06-22T14:23:24+09:00" pubdate data-updated="true">2014-06-22 14:23:24</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/ozhi-rase/'>お知らせ</a>, <a class='category' href='/blog/categories/ri-chang/'>日常</a>
+    <a class='category' href='/blog/categories/lodge/'>Lodge</a>, <a class='category' href='/blog/categories/rails/'>Rails</a>, <a class='category' href='/blog/categories/ruby/'>Ruby</a>, <a class='category' href='/blog/categories/ozhi-rase/'>お知らせ</a>, <a class='category' href='/blog/categories/zi-zuo/'>自作</a>
   
 </span>
 
@@ -152,7 +211,7 @@ bitbucketに保存していたバックアップが古くて過去記事と整�
     
       <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://m-yamashita.github.io/blog/2014/01/19/remade-the-blog-system/" data-via="" data-counturl="http://m-yamashita.github.io/blog/2014/01/19/remade-the-blog-system/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://m-yamashita.github.io/blog/2014/06/22/lodge-release/" data-via="" data-counturl="http://m-yamashita.github.io/blog/2014/06/22/lodge-release/" >Tweet</a>
   
   
   <div class="g-plusone" data-size="medium"></div>
@@ -166,8 +225,8 @@ bitbucketに保存していたバックアップが古くて過去記事と整�
     
     <p class="meta">
       
+        <a class="basic-alignment left" href="/blog/2014/01/19/remade-the-blog-system/" title="Previous Post: ブログを作り直しました。">&laquo; ブログを作り直しました。</a>
       
-        <a class="basic-alignment right" href="/blog/2014/06/22/lodge-release/" title="Next Post: イントラネット内でナレッジ/ノウハウの共有ができる「Lodge」をリリースしました。">イントラネット内でナレッジ/ノウハウの共有ができる「Lodge」をリリースしました。 &raquo;</a>
       
     </p>
   </footer>
@@ -250,8 +309,8 @@ bitbucketに保存していたバックアップが古くて過去記事と整�
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://m-yamashita.github.io/blog/2014/01/19/remade-the-blog-system/';
-        var disqus_url = 'http://m-yamashita.github.io/blog/2014/01/19/remade-the-blog-system/';
+        var disqus_identifier = 'http://m-yamashita.github.io/blog/2014/06/22/lodge-release/';
+        var disqus_url = 'http://m-yamashita.github.io/blog/2014/06/22/lodge-release/';
         var disqus_script = 'embed.js';
       
     (function () {

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: お知らせ | あ、はい。]]></title>
-  <link href="http://m-yamashita.github.io/blog/categories/ozhi-rase/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Ruby | あ、はい。]]></title>
+  <link href="http://m-yamashita.github.io/blog/categories/ruby/atom.xml" rel="self"/>
   <link href="http://m-yamashita.github.io/"/>
   <updated>2014-06-22T14:35:59+09:00</updated>
   <id>http://m-yamashita.github.io/</id>
@@ -87,22 +87,6 @@ Qiita様超リスペクトです。</p>
 <p>これからも開発は続けていく予定ですが、せっかくOSSなので、皆さんのpull reqもどんどんお待ちしています！Lodgeをよりよくして頂ける方を募集しています。</p>
 
 <p>Qiita最高！！</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[ブログを作り直しました。]]></title>
-    <link href="http://m-yamashita.github.io/blog/2014/01/19/remade-the-blog-system/"/>
-    <updated>2014-01-19T03:55:24+09:00</updated>
-    <id>http://m-yamashita.github.io/blog/2014/01/19/remade-the-blog-system</id>
-    <content type="html"><![CDATA[<p>久々にブログを更新しようかなと思って以前と別の環境にOctopress環境を導入したんですが、
-bitbucketに保存していたバックアップが古くて過去記事と整合性が取れなくなっちゃったんで、
-どうせ大したことも書いてなかったしってことで、新しく作りなおすことにしちゃいました♪</p>
-
-<p>というわけで、またよろしくお願いします。</p>
-
-<p>ついでにコメント欄もつけてみました。
-はてブとかも頑張ればつけれるみたいなのでやってみよかなー。</p>
 ]]></content>
   </entry>
   
